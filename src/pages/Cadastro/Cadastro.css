@@ -1,0 +1,83 @@
+.cadastro-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cadastro-container h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: orange;
+}
+
+
+.cadastro-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro-form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.cadastro-form .form-group label {
+    font-weight: 500;
+    color: #495057;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.cadastro-form .form-group input,
+.cadastro-form .form-group select {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.cadastro-form .form-group input:focus,
+.cadastro-form .form-group select:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.cadastro-form .form-group p {
+    color: #e74c3c;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+.cadastro-form .form-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cadastro-form .form-row .form-group {
+    flex: 1;
+}
+
+.cadastro-form .btn-primary {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #007bff;
+    border-color: orange;
+    border-radius: 4px;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.cadastro-form .btn-primary:hover {
+    background-color: orange;
+    border-color: #004085;
+}

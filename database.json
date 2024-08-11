@@ -1,0 +1,266 @@
+{
+  "register": [
+    {
+      "id": "d4f0",
+      "nome": "Alana Daniele de Oliveira Carneiro",
+      "sexo": "Feminino",
+      "dataNascimento": "1987-04-02",
+      "cpf": "076.532.166-17",
+      "email": "alana@gmail.com",
+      "senha": "5207418",
+      "confirmarSenha": "5207418",
+      "cep": "88061-701",
+      "logradouro": "Rodovia Jornalista Manoel de Menezes",
+      "numero": "1872",
+      "bairro": "Barra da Lagoa",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "pais": "Brasil"
+    },
+    {
+      "id": "bcdb",
+      "nome": "Ana Silva",
+      "sexo": "Feminino",
+      "dataNascimento": "1990-05-15",
+      "cpf": "123.456.789-00",
+      "email": "ana@gmail.com",
+      "senha": "5207418",
+      "confirmarSenha": "5207418",
+      "cep": "12345-678",
+      "logradouro": "Rua das Flores",
+      "numero": "123",
+      "bairro": "Jardim Botânico",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "pais": "Brasil"
+    },
+    {
+      "id": "5f89",
+      "nome": "Carlos Oliveira",
+      "sexo": "Masculino",
+      "dataNascimento": "1985-12-22",
+      "cpf": "987.654.321-00",
+      "email": "carlos@gmail.com",
+      "senha": "5207418",
+      "confirmarSenha": "5207418",
+      "cep": "87654-321",
+      "logradouro": "Avenida Paulista",
+      "numero": "456",
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "pais": "Brasil"
+    },
+    {
+      "id": "9ecf",
+      "nome": "Maria Santos",
+      "sexo": "Feminino",
+      "dataNascimento": "1992-03-10",
+      "cpf": "321.654.987-00",
+      "email": "maria@gmail.com",
+      "senha": "5207418",
+      "confirmarSenha": "5207418",
+      "cep": "23456-789",
+      "logradouro": "Rua São João",
+      "numero": "789",
+      "bairro": "Vila Mariana",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "pais": "Brasil"
+    },
+    {
+      "id": "a10b",
+      "nome": "João Pereira",
+      "sexo": "Masculino",
+      "dataNascimento": "1988-07-30",
+      "cpf": "456.789.123-00",
+      "email": "joao@gmail.com",
+      "senha": "5207418",
+      "confirmarSenha": "5207418",
+      "cep": "34567-890",
+      "logradouro": "Rua dos Coqueiros",
+      "numero": "321",
+      "bairro": "Morumbi",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "pais": "Brasil"
+    },
+    {
+      "id": "1443",
+      "nome": "Alana Daniele de Oliveira Carneiro",
+      "sexo": "Feminino",
+      "dataNascimento": "1987-04-02",
+      "cpf": "076.532.166-17",
+      "email": "alanatureza@hotmail.com",
+      "senha": "5207418",
+      "confirmarSenha": "5207418",
+      "cep": "88061701",
+      "logradouro": "Rodovia Jornalista Manoel de Menezes",
+      "numero": "1872",
+      "bairro": "Barra da Lagoa",
+      "cidade": "Florianópolis",
+      "estado": "SC"
+    }
+  ],
+  "login": [
+    {
+      "email": "alana@gmail.com",
+      "senha": "5207418",
+      "id": "d4f0"
+    },
+    {
+      "email": "ana@gmail.com",
+      "senha": "5207418",
+      "id": "bcdb"
+    },
+    {
+      "email": "carlos@gmail.com",
+      "senha": "5207418",
+      "id": "5f89"
+    },
+    {
+      "email": "maria@gmail.com",
+      "senha": "5207418",
+      "id": "9ecf"
+    },
+    {
+      "email": "joao@gmail.com",
+      "senha": "5207418",
+      "id": "a10b"
+    },
+    {
+      "id": "96a2",
+      "email": "ana@gmail.com"
+    },
+    {
+      "id": "86a2",
+      "email": "ana@gmail.com"
+    },
+    {
+      "id": "5692",
+      "email": "alanatureza@hotmail.com"
+    },
+    {
+      "id": "28f0",
+      "email": "alanatureza@hotmail.com"
+    },
+    {
+      "id": "7b0f",
+      "email": "alanatureza@hotmail.com"
+    },
+    {
+      "id": "48d2",
+      "email": "alanatureza@hotmail.com"
+    },
+    {
+      "id": "2172",
+      "email": "alanatureza@hotmail.com"
+    },
+    {
+      "id": "6759",
+      "email": "alanatureza@hotmail.com"
+    },
+    {
+      "id": "3905",
+      "email": "alanatureza@hotmail.com"
+    },
+    {
+      "id": "b373",
+      "email": "alanatureza@hotmail.com"
+    },
+    {
+      "id": "8f5c",
+      "email": "alanatureza@hotmail.com"
+    },
+    {
+      "id": "7eea",
+      "email": "alanatureza@hotmail.com"
+    },
+    {
+      "id": "d6e8",
+      "email": "alanatureza@hotmail.com"
+    }
+  ],
+  "users": [
+    {
+      "id": "d652",
+      "nome": "Ana Silva",
+      "sexo": "Feminino",
+      "dataNascimento": "1990-05-15",
+      "cpf": "12345678900",
+      "email": "ana@gmail.com",
+      "senha": "5207418",
+      "cep": "12345678",
+      "logradouro": "Rua das Flores",
+      "numero": "123",
+      "bairro": "Jardim Botânico",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "pais": "Brasil"
+    },
+    {
+      "id": "3946",
+      "nome": "Carlos Oliveira",
+      "sexo": "Masculino",
+      "dataNascimento": "1985-12-22",
+      "cpf": "98765432100",
+      "email": "carlos@gmail.com",
+      "senha": "5207418",
+      "cep": "87654321",
+      "logradouro": "Avenida Paulista",
+      "numero": "456",
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "pais": "Brasil"
+    },
+    {
+      "id": "6abe",
+      "nome": "Maria Santos",
+      "sexo": "Feminino",
+      "dataNascimento": "1992-03-10",
+      "cpf": "32165498700",
+      "email": "maria@gmail.com",
+      "senha": "5207418",
+      "cep": "23456789",
+      "logradouro": "Rua São João",
+      "numero": "789",
+      "bairro": "Vila Mariana",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "pais": "Brasil"
+    },
+    {
+      "id": "8390",
+      "nome": "João Pereira",
+      "sexo": "Masculino",
+      "dataNascimento": "1988-07-30",
+      "cpf": "45678912300",
+      "email": "joao@gmail.com",
+      "senha": "5207418",
+      "cep": "34567890",
+      "logradouro": "Rua dos Coqueiros",
+      "numero": "321",
+      "bairro": "Morumbi",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "pais": "Brasil"
+    },
+    {
+      "id": "66b9",
+      "nome": "Juliana Costa",
+      "sexo": "Feminino",
+      "dataNascimento": "1995-11-05",
+      "cpf": "65432198700",
+      "email": "juliana@gmail.com",
+      "senha": "5207418",
+      "cep": "45678901",
+      "logradouro": "Avenida das Nações",
+      "numero": "654",
+      "bairro": "Pinheiros",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "pais": "Brasil"
+    }
+  ]
+}
