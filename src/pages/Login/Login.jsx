@@ -20,7 +20,7 @@ const Login = () => {
 			);
 
 			if (usuarioEncontrado) {
-				localStorage.setItem("autenticado", "true");
+				localStorage.setItem("usuario", JSON.stringify(usuarioEncontrado));
 				navigate("/dashboard");
 			} else {
 				alert("E-mail ou senha incorretos");

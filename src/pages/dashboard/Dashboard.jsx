@@ -19,8 +19,11 @@ const Dashboard = () => {
 				setLocations(locationResponse.data);
 				setRegisteredLocations(locationResponse.data.length);
 
-				const usersResponse = await axios.get("http://localhost:3000/users");
-				setActiveUsers(usersResponse.data.filter((user) => user.active).length);
+				// Buscar apenas usuários ativos
+				const activeUsersResponse = await axios.get(
+					"http://localhost:3000/users?active=true",
+				);
+				setActiveUsers(activeUsersResponse.data.length);
 			} catch (error) {
 				console.error("Erro ao buscar dados:", error);
 			}
@@ -29,9 +32,9 @@ const Dashboard = () => {
 	}, []);
 
 	const handleLogout = () => {
-		// implementar lógica de logout
-		console.log("Usuário saiu.");
+		localStorage.removeItem("autenticado");
 		navigate("/login");
+		alert("Logout realizado com sucesso!");
 	};
 
 	return (
@@ -51,8 +54,8 @@ const Dashboard = () => {
 				<button type="button" onClick={() => navigate("/locais")}>
 					Locais de Viagem
 				</button>
-				<button type="button" onClick={() => navigate("/cadastro")}>
-					Cadastro
+				<button type="button" onClick={() => navigate("/cadastro-local")}>
+					Cadastrar Novo Local
 				</button>
 				<button type="button" onClick={handleLogout}>
 					Sair
@@ -62,7 +65,14 @@ const Dashboard = () => {
 				<h2>Locais de Viagem</h2>
 				<ul>
 					{locations.map((location) => (
-						<li key={location.id}>{location.name}</li>
+						<li key={location.id}>
+							{" "}
+							<h3>{location.nome}</h3>
+							<p>Descrição: {location.descricao}</p>
+							<p>Cidade: {location.cidade}</p>
+							<p>Estado: {location.estado}</p>
+							<p>Viajante: {location.usuario.nome}</p>
+						</li>
 					))}
 				</ul>
 			</div>

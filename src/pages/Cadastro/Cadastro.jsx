@@ -203,7 +203,7 @@ const Cadastro = () => {
 					<label htmlFor="cep">CEP: </label>
 					<input
 						{...register("cep", {
-							required: "CEP é obrigatório",
+							required: "O CEP é obrigatório e deve conter apenas números",
 							validate: (value) => {
 								const formattedCep = formatCEP(value);
 								return formattedCep.length === 8 || "CEP deve conter 8 dígitos";

@@ -81,10 +81,10 @@
       "pais": "Brasil"
     },
     {
-      "id": "2ef2",
+      "id": "aab1",
       "nome": "Alana Daniele de Oliveira Carneiro",
       "sexo": "Feminino",
-      "dataNascimento": "1978-04-02",
+      "dataNascimento": "1987-04-02",
       "cpf": "076.532.166-17",
       "email": "alanatureza@hotmail.com",
       "senha": "5207418",
@@ -95,41 +95,42 @@
       "bairro": "Barra da Lagoa",
       "cidade": "Florianópolis",
       "estado": "SC"
-    },
-    {
-      "id": "13cb",
-      "nome": "Alana Daniele de Oliveira Carneiro",
-      "sexo": "Feminino",
-      "dataNascimento": "1987-04-02",
-      "cpf": "076.532.166-17",
-      "email": "alana@gmail.com",
-      "senha": "5207418",
-      "confirmarSenha": "5207418",
-      "cep": "88061701",
-      "logradouro": "Rodovia Jornalista Manoel de Menezes",
-      "numero": "1872",
-      "bairro": "Barra da Lagoa",
-      "cidade": "Florianópolis",
-      "estado": "SC"
-    },
-    {
-      "id": "1c89",
-      "nome": "Alana Daniele de Oliveira Carneiro",
-      "sexo": "Feminino",
-      "dataNascimento": "1987-04-02",
-      "cpf": "076.532.166-17",
-      "email": "natureza@hotmail.com",
-      "senha": "5207418",
-      "confirmarSenha": "5207418",
-      "cep": "88061-701",
-      "logradouro": "Rodovia Jornalista Manoel de Menezes",
-      "numero": "1872",
-      "bairro": "Barra da Lagoa",
-      "cidade": "Florianópolis",
-      "estado": "SC"
     }
   ],
   "locations": [
-    {}
+    {
+      "id": "1ea9",
+      "nome": "Praia da Joaquina",
+      "descricao": "Praia e Dunas",
+      "cep": "88062600",
+      "logradouro": "Avenida Prefeito Acácio Garibaldi S. Thiago",
+      "numero": "0",
+      "complemento": "",
+      "bairro": "Lagoa da Conceição",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "latitude": "-27.6101303",
+      "longitude": "-48.4420933",
+      "usuario": {
+        "nome": "Ana Silva"
+      }
+    },
+    {
+      "id": "a6a2",
+      "nome": "Costa da Lagoa",
+      "descricao": "Um paraíso ecológico",
+      "cep": "88062370",
+      "logradouro": "Servidão Caminho Costa da Lagoa",
+      "numero": "",
+      "complemento": "",
+      "bairro": "Lagoa da Conceição",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "latitude": "-27.5835636",
+      "longitude": "-48.4597357",
+      "usuario": {
+        "nome": "Alana Daniele de Oliveira Carneiro"
+      }
+    }
   ]
 }
