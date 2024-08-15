@@ -39,7 +39,7 @@ Viagem365 é uma aplicação web para gerenciamento de viagens, permitindo aos u
 
 3. Inicie o servidor JSON (para prototipagem rápida de API):
     ```bash
-    npx json-server --watch db.json --port 3001
+    npx json-server --watch database.json --port 3000
     ```
 
 4. Inicie a aplicação:

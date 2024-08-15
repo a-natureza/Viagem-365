@@ -61,15 +61,11 @@ const Cadastro = () => {
 		}
 
 		try {
-			const response = await axios.post(
-				"http://localhost:3000/register",
-				data,
-				{
-					headers: {
-						"Content-Type": "application/json",
-					},
+			const response = await axios.post("http://localhost:3000/users", data, {
+				headers: {
+					"Content-Type": "application/json",
 				},
-			);
+			});
 
 			if (response.status === 201) {
 				alert("Usuário cadastrado com sucesso!");
