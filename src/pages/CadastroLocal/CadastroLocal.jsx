@@ -2,11 +2,15 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import { useForm } from "react-hook-form";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import "./CadastroLocal.css";
 
 function CadastroLocal() {
+	const { id } = useParams();
+	const navigate = useNavigate();
 	const { register, reset } = useForm();
+
+	// States to hold the form data
 	const [nome, setNome] = useState("");
 	const [descricao, setDescricao] = useState("");
 	const [cep, setCep] = useState("");
@@ -18,25 +22,40 @@ function CadastroLocal() {
 	const [estado, setEstado] = useState("");
 	const [latitude, setLatitude] = useState("");
 	const [longitude, setLongitude] = useState("");
-	const [userName, setUserName] = useState("");
 
-	const navigate = useNavigate();
-
-	// UseEffect para pegar o nome do usuário ao carregar o componente
+	// Fetch data if editing an existing location
 	useEffect(() => {
-		// Recupera o usuário do localStorage
-		const user = JSON.parse(localStorage.getItem("usuario"));
-		if (user?.nome) {
-			setUserName(user.nome);
+		if (id) {
+			const fetchLocation = async () => {
+				try {
+					const response = await axios.get(
+						`http://localhost:3000/locations/${id}`,
+					);
+					const locationData = response.data;
+					setNome(locationData.nome);
+					setDescricao(locationData.descricao);
+					setCep(locationData.cep);
+					setLogradouro(locationData.logradouro);
+					setNumero(locationData.numero);
+					setComplemento(locationData.complemento);
+					setBairro(locationData.bairro);
+					setCidade(locationData.cidade);
+					setEstado(locationData.estado);
+					setLatitude(locationData.latitude);
+					setLongitude(locationData.longitude);
+				} catch (error) {
+					console.error("Erro ao buscar local:", error);
+				}
+			};
+			fetchLocation();
 		}
-	}, []);
+	}, [id]);
 
 	const handleCepChange = async (e) => {
 		const value = e.target.value;
 		setCep(value);
 		if (value.length === 8) {
 			try {
-				// Busca dados do CEP
 				const response = await axios.get(
 					`https://cep.awesomeapi.com.br/json/${value}`,
 				);
@@ -46,7 +65,6 @@ function CadastroLocal() {
 				setCidade(data.city || "");
 				setEstado(data.state || "");
 
-				// Obter coordenadas geográficas
 				const geocodeResponse = await axios.get(
 					`https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(
 						`${data.address}, ${data.city}, ${data.state}, Brazil`,
@@ -70,17 +88,8 @@ function CadastroLocal() {
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
-		// Lógica para enviar os dados do formulário
 		try {
-			// Obter o usuário logado
 			const user = JSON.parse(localStorage.getItem("usuario"));
-			// Verificar se o usuário está logado
-			// if (!user) {
-			// 	alert("Você precisa estar logado para cadastrar um local.");
-			// 	navigate("/login");
-			// 	return;
-			// }
-			// Criar o objeto do local
 			const newLocation = {
 				nome,
 				descricao,
@@ -93,26 +102,28 @@ function CadastroLocal() {
 				estado,
 				latitude,
 				longitude,
-				usuario: { nome: user.nome }, // Adiciona o nome do usuário ao objeto
+				usuario: { nome: user.nome },
 			};
 
-			// Enviar os dados para o servidor usando POST para salvar no database.json
-			await axios.post("http://localhost:3000/locations", newLocation);
+			if (id) {
+				await axios.put(`http://localhost:3000/locations/${id}`, newLocation);
+				alert("Local atualizado com sucesso!");
+			} else {
+				await axios.post("http://localhost:3000/locations", newLocation);
+				alert("Local cadastrado com sucesso!");
+			}
 
-			alert("Local cadastrado com sucesso!");
-			// Limpar os campos do formulário
 			reset();
-			// ... (limpar outros campos) ...
 			navigate("/dashboard");
 		} catch (error) {
-			console.error("Erro ao cadastrar local:", error);
+			console.error("Erro ao cadastrar ou atualizar local:", error);
 		}
 	};
 
 	return (
 		<Container className="cadastro-container">
 			<form className="cadastro-form" onSubmit={handleSubmit}>
-				<h2>Cadastro de Local de Viagem</h2>
+				<h2>{id ? "Editar Local de Viagem" : "Cadastro de Local de Viagem"}</h2>
 				<div className="form-group">
 					<label htmlFor="nome">Nome do Local:</label>
 					<input
@@ -225,7 +236,9 @@ function CadastroLocal() {
 						readOnly
 					/>
 				</div>
-				<button type="submit">Cadastrar Local</button>
+				<button type="submit">
+					{id ? "Atualizar Local" : "Cadastrar Local"}
+				</button>
 				<button type="button" onClick={() => navigate(-1)}>
 					Cancelar
 				</button>

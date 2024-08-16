@@ -99,23 +99,6 @@
   ],
   "locations": [
     {
-      "id": "1ea9",
-      "nome": "Praia da Joaquina",
-      "descricao": "Praia e Dunas",
-      "cep": "88062600",
-      "logradouro": "Avenida Prefeito Acácio Garibaldi S. Thiago",
-      "numero": "0",
-      "complemento": "",
-      "bairro": "Lagoa da Conceição",
-      "cidade": "Florianópolis",
-      "estado": "SC",
-      "latitude": "-27.6101303",
-      "longitude": "-48.4420933",
-      "usuario": {
-        "nome": "Ana Silva"
-      }
-    },
-    {
       "id": "a6a2",
       "nome": "Costa da Lagoa",
       "descricao": "Um paraíso ecológico",
@@ -128,6 +111,23 @@
       "estado": "SC",
       "latitude": "-27.5835636",
       "longitude": "-48.4597357",
+      "usuario": {
+        "nome": "Alana Daniele de Oliveira Carneiro"
+      }
+    },
+    {
+      "id": "82ee",
+      "nome": "Espaço Aviva",
+      "descricao": "Um local para se energizar.",
+      "cep": "88061701",
+      "logradouro": "Rodovia Jornalista Manoel de Menezes",
+      "numero": "1872",
+      "complemento": "",
+      "bairro": "Barra da Lagoa",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "latitude": "-27.5885926",
+      "longitude": "-48.4360798",
       "usuario": {
         "nome": "Alana Daniele de Oliveira Carneiro"
       }

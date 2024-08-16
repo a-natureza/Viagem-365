@@ -1,0 +1,44 @@
+.locais-container {
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 9px;
+}
+
+.locais-list {
+    list-style: none;
+    padding: 0;
+}
+
+.locais-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.locais-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    background-color: blue;
+    color: orange;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:nth-child(2) {
+    background-color: purple;
+}
+
+button:nth-child(2):hover {
+    background-color: #c82333;
+}

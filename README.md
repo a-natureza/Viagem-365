@@ -54,6 +54,9 @@ Viagem365 é uma aplicação web para gerenciamento de viagens, permitindo aos u
 
 ## Melhorias Futuras
 
+- Back-end 
+- Integração com banco de dados
+- Criptografia
 - Implementar autenticação robusta com JWT.
 - Adicionar testes unitários e de integração.
 - Melhorar a UI com mais funcionalidades interativas.
@@ -72,6 +75,36 @@ Viagem365 é uma aplicação web para gerenciamento de viagens, permitindo aos u
   - **styles/**: Estilos globais e específicos.
   - **utils/**: Utilitários e helpers.
 
-## Contato
+## 👩‍💻 Expert
 
-<!-- Para mais informações, entre em contato pelo e-mail: [seu-email@example.com](mailto:seu-email@example.com). -->
+<p>
+    <img 
+      align=left 
+      margin=10 
+      width=80 
+      src="./src/assets/alana.jpg"
+    />
+    <p>&nbsp&nbsp&nbspAlana Daniele<br>
+    &nbsp&nbsp&nbsp
+    <a 
+        href="https://github.com/a-natureza">
+        GitHub
+    </a>
+    &nbsp;|&nbsp;
+    <a 
+        href="https://www.linkedin.com/in/alana-daniele/">
+        LinkedIn
+    </a>
+    &nbsp;|&nbsp;
+    <a 
+        href="https://www.instagram.com/tendanapraia">
+        Instagram
+    </a>
+    &nbsp;|&nbsp;</p>
+</p>
+<br/><br/>
+<p>
+
+---
+
+⌨️ com 💜 por [Alana Daniele](https://github.com/a-natureza)
