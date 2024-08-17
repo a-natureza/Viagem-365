@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import MapaLocais from "../../components/MapaLocais";
 import "./Dashboard.css";
 
 const Dashboard = () => {
@@ -68,6 +69,10 @@ const Dashboard = () => {
 						<li key={location.id}>
 							{" "}
 							<h3>{location.nome}</h3>
+							<MapaLocais
+								latitude={location.latitude}
+								longitude={location.longitude}
+							/>
 							<p>Descrição: {location.descricao}</p>
 							<p>Cidade: {location.cidade}</p>
 							<p>Estado: {location.estado}</p>

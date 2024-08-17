@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import MapaLocais from "../../components/MapaLocais";
 import "./Locais.css";
 
 function Locais() {
@@ -40,6 +41,11 @@ function Locais() {
 				{locations.map((location) => (
 					<li key={location.id} className="locais-item">
 						<h3>{location.nome}</h3>
+
+						<MapaLocais
+							latitude={location.latitude}
+							longitude={location.longitude}
+						/>
 						<p>Descrição: {location.descricao}</p>
 						<p>Cidade: {location.cidade}</p>
 						<p>Estado: {location.estado}</p>

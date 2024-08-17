@@ -116,7 +116,6 @@
       }
     },
     {
-      "id": "82ee",
       "nome": "Espaço Aviva",
       "descricao": "Um local para se energizar.",
       "cep": "88061701",
@@ -130,6 +129,24 @@
       "longitude": "-48.4360798",
       "usuario": {
         "nome": "Alana Daniele de Oliveira Carneiro"
+      },
+      "id": "82ee"
+    },
+    {
+      "id": "0f0f",
+      "nome": "Lagoa do Peri",
+      "descricao": "Lagoa no sul da ilha",
+      "cep": "88066000",
+      "logradouro": "Rodovia Francisco Thomaz dos Santos",
+      "numero": "",
+      "complemento": "Restaurante Peri",
+      "bairro": "Morro das Pedras",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "latitude": "-27.7517229",
+      "longitude": "-48.5098145",
+      "usuario": {
+        "nome": "Ana Silva"
       }
     }
   ]
