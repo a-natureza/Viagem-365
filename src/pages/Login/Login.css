@@ -1,0 +1,70 @@
+h1 {
+    color: orange;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+    font-style: italic;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 777px;
+    height: 555px;
+    padding: 50px;
+    border: 4px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.lab {
+    width: 300px;
+}
+
+.img-login {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.login-form {
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn {
+    size: 4px;
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: orange;
+    color: #fff;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: purple;
+    border-color: #007bff
+}
+
+.btn-secondary {
+    background-color: orange;
+    border-color: #007bff;
+    color: #fff;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.btn-secondary:hover {
+    background-color: purple;
+    border-color: orange;
+}

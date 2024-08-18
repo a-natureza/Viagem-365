@@ -1,0 +1,45 @@
+.locais-container {
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 9px;
+    max-width: 100%;
+}
+
+.locais-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    max-width: 100%;
+    box-sizing: border-box;
+    width: 555px;
+}
+
+.locais-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+button {
+    background-color: blue;
+    color: orange;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:nth-child(3) {
+    background-color: red;
+    color: #ddd;
+}
+
+button:nth-child(3):hover {
+    background-color: purple;
+}

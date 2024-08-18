@@ -1,0 +1,272 @@
+{
+  "users": [
+    {
+      "id": "d652",
+      "nome": "Ana Silva",
+      "sexo": "Feminino",
+      "dataNascimento": "1990-05-15",
+      "cpf": "12345678900",
+      "email": "ana@gmail.com",
+      "senha": "5207418",
+      "cep": "12345678",
+      "logradouro": "Rua das Flores",
+      "numero": "123",
+      "bairro": "Jardim Botânico",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "pais": "Brasil"
+    },
+    {
+      "id": "3946",
+      "nome": "Carlos Oliveira",
+      "sexo": "Masculino",
+      "dataNascimento": "1985-12-22",
+      "cpf": "98765432100",
+      "email": "carlos@gmail.com",
+      "senha": "5207418",
+      "cep": "87654321",
+      "logradouro": "Avenida Paulista",
+      "numero": "456",
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "pais": "Brasil"
+    },
+    {
+      "id": "6abe",
+      "nome": "Maria Santos",
+      "sexo": "Feminino",
+      "dataNascimento": "1992-03-10",
+      "cpf": "32165498700",
+      "email": "maria@gmail.com",
+      "senha": "5207418",
+      "cep": "23456789",
+      "logradouro": "Rua São João",
+      "numero": "789",
+      "bairro": "Vila Mariana",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "pais": "Brasil"
+    },
+    {
+      "id": "8390",
+      "nome": "João Pereira",
+      "sexo": "Masculino",
+      "dataNascimento": "1988-07-30",
+      "cpf": "45678912300",
+      "email": "joao@gmail.com",
+      "senha": "5207418",
+      "cep": "34567890",
+      "logradouro": "Rua dos Coqueiros",
+      "numero": "321",
+      "bairro": "Morumbi",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "pais": "Brasil"
+    },
+    {
+      "id": "66b9",
+      "nome": "Juliana Costa",
+      "sexo": "Feminino",
+      "dataNascimento": "1995-11-05",
+      "cpf": "65432198700",
+      "email": "juliana@gmail.com",
+      "senha": "5207418",
+      "cep": "45678901",
+      "logradouro": "Avenida das Nações",
+      "numero": "654",
+      "bairro": "Pinheiros",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "pais": "Brasil"
+    },
+    {
+      "id": "aab1",
+      "nome": "Alana Daniele",
+      "sexo": "Feminino",
+      "dataNascimento": "1987-04-02",
+      "cpf": "076.532.166-17",
+      "email": "alanatureza@hotmail.com",
+      "senha": "5207418",
+      "confirmarSenha": "5207418",
+      "cep": "88061701",
+      "logradouro": "Rodovia Jornalista Manoel de Menezes",
+      "numero": "1872",
+      "bairro": "Barra da Lagoa",
+      "cidade": "Florianópolis",
+      "estado": "SC"
+    }
+  ],
+  "locations": [
+    {
+      "id": "a6a2",
+      "nome": "Costa da Lagoa",
+      "descricao": "Um paraíso ecológico",
+      "cep": "88062370",
+      "logradouro": "Servidão Caminho Costa da Lagoa",
+      "numero": "",
+      "complemento": "",
+      "bairro": "Lagoa da Conceição",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "latitude": "-27.5835636",
+      "longitude": "-48.4597357",
+      "usuario": {
+        "nome": "Alana Daniele"
+      }
+    },
+    {
+      "nome": "Espaço Aviva",
+      "descricao": "Um local para se energizar.",
+      "cep": "88061701",
+      "logradouro": "Rodovia Jornalista Manoel de Menezes",
+      "numero": "1872",
+      "complemento": "",
+      "bairro": "Barra da Lagoa",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "latitude": "-27.5885926",
+      "longitude": "-48.4360798",
+      "usuario": {
+        "nome": "Alana Daniele"
+      },
+      "id": "82ee"
+    },
+    {
+      "id": "0f0f",
+      "nome": "Lagoa do Peri",
+      "descricao": "Lagoa no sul da ilha",
+      "cep": "88066000",
+      "logradouro": "Rodovia Francisco Thomaz dos Santos",
+      "numero": "",
+      "complemento": "Restaurante Peri",
+      "bairro": "Morro das Pedras",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "latitude": "-27.7517229",
+      "longitude": "-48.5098145",
+      "usuario": {
+        "nome": "Ana Silva"
+      }
+    },
+    {
+      "id": "f6ed",
+      "nome": "Farol da Barra da Lagoa",
+      "descricao": "Iluminando a vida ",
+      "cep": "88061090",
+      "logradouro": "Rua Amaro Coelho",
+      "numero": "",
+      "complemento": "",
+      "bairro": "Barra da Lagoa",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "latitude": "-27.5752464",
+      "longitude": "-48.4231921",
+      "usuario": {
+        "nome": "Ana Silva"
+      }
+    },
+    {
+      "id": "a001",
+      "nome": "Lagoa da Conceição",
+      "descricao": "Um dos pontos turísticos mais famosos de Florianópolis.",
+      "cep": "88062-010",
+      "logradouro": "Avenida das Rendeiras",
+      "numero": "s/n",
+      "complemento": "",
+      "bairro": "Lagoa da Conceição",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "latitude": "-27.595977",
+      "longitude": "-48.453446",
+      "usuario": {
+        "nome": "Ana Silva"
+      }
+    },
+    {
+      "id": "a002",
+      "nome": "Praia da Joaquina",
+      "descricao": "Famosa praia conhecida por suas ondas perfeitas para o surf.",
+      "cep": "88063-000",
+      "logradouro": "Rodovia Jornalista Manoel de Menezes",
+      "numero": "s/n",
+      "complemento": "",
+      "bairro": "Joaquina",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "latitude": "-27.617487",
+      "longitude": "-48.435276",
+      "usuario": {
+        "nome": "Carlos Oliveira"
+      }
+    },
+    {
+      "id": "a003",
+      "nome": "Praia do Campeche",
+      "descricao": "Praia popular com areia branca e mar cristalino.",
+      "cep": "88063-301",
+      "logradouro": "Avenida Pequeno Príncipe",
+      "numero": "s/n",
+      "complemento": "",
+      "bairro": "Campeche",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "latitude": "-27.670586",
+      "longitude": "-48.478347",
+      "usuario": {
+        "nome": "Maria Santos"
+      }
+    },
+    {
+      "id": "a004",
+      "nome": "Praia Mole",
+      "descricao": "Praia conhecida pelas grandes ondas e natureza exuberante.",
+      "cep": "88061-000",
+      "logradouro": "Rodovia Jornalista Manoel de Menezes",
+      "numero": "s/n",
+      "complemento": "",
+      "bairro": "Praia Mole",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "latitude": "-27.595238",
+      "longitude": "-48.435841",
+      "usuario": {
+        "nome": "Lucas Costa"
+      }
+    },
+    {
+      "id": "a005",
+      "nome": "Ilha do Campeche",
+      "descricao": "Ilha paradisíaca com águas cristalinas e trilhas arqueológicas.",
+      "cep": "88063-301",
+      "logradouro": "Ilha do Campeche",
+      "numero": "s/n",
+      "complemento": "",
+      "bairro": "Campeche",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "latitude": "-27.685006",
+      "longitude": "-48.471158",
+      "usuario": {
+        "nome": "Pedro Souza"
+      }
+    },
+    {
+      "id": "4182",
+      "nome": "Praia da Solidão",
+      "descricao": "Conexão profunda com praia exuberante, cachoeira e trilhas.",
+      "cep": "88067500",
+      "logradouro": "Rua Inério Joaquim da Silva",
+      "numero": "",
+      "complemento": "",
+      "bairro": "Pântano do Sul",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "latitude": "-27.7946285",
+      "longitude": "-48.5345301",
+      "usuario": {
+        "nome": "Alana Daniele"
+      }
+    }
+  ]
+}
