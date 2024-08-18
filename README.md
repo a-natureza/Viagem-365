@@ -22,9 +22,34 @@ Viagem365 é uma aplicação web para gerenciamento de viagens, permitindo aos u
 - **Listagem e Edição:** Listar, editar e deletar destinos.
 - **Mapas:** Visualização de destinos cadastrados em um mapa.
 
+## Telas
+
+<p aligne="center">
+    <strong>Login</strong><br/>
+    <img 
+        src="./src/assets/login.png"
+        width="222"
+    />
+</p>
+<p aligne="center">
+    <strong>Dashboard</strong><br/>
+    <img 
+        src="./src/assets/dashboard.png"
+        width="222"
+    />
+</p>
+<p aligne="center">
+    <strong>Locais</strong><br/>
+    <img 
+        src="./src/assets/locais.png"
+        width="222"
+    />
+</p>
+
+
 ## Tecnologias Utilizadas
 <img 
-    src="./public/image.png"
+    src="./src/assets/trello.png"
     width="222"
 />
 - **Planejamento:** Trello
@@ -78,6 +103,7 @@ Viagem365 é uma aplicação web para gerenciamento de viagens, permitindo aos u
 - Otimizar o desempenho da aplicação.
 - Permitir postagem de fotos dos locais.
 - Chat para usuários ativos.
+- Header, Footer e Siderbar.
 
 ## Vídeo de Apresentação
 <!-- 
