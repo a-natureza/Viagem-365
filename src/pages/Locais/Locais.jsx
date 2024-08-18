@@ -8,6 +8,7 @@ import "./Locais.css";
 function Locais() {
 	const [locations, setLocations] = useState([]);
 	const navigate = useNavigate();
+	const usuarioLogado = JSON.parse(localStorage.getItem("usuario"));
 
 	useEffect(() => {
 		const fetchLocations = async () => {
@@ -67,18 +68,22 @@ function Locais() {
 									<Button variant="primary" onClick={() => navigate(-1)}>
 										Dashboard
 									</Button>
-									<Button
-										variant="warning"
-										onClick={() => handleEdit(location.id)}
-									>
-										Editar
-									</Button>
-									<Button
-										variant="danger"
-										onClick={() => handleDelete(location.id)}
-									>
-										Deletar
-									</Button>
+									{location.usuarioId === usuarioLogado.id && (
+										<Button
+											variant="warning"
+											onClick={() => handleEdit(location.id)}
+										>
+											Editar
+										</Button>
+									)}
+									{location.usuarioId === usuarioLogado.id && (
+										<Button
+											variant="danger"
+											onClick={() => handleDelete(location.id)}
+										>
+											Deletar
+										</Button>
+									)}
 								</div>
 							</Card.Body>
 						</Card>
