@@ -99,7 +99,6 @@
   ],
   "locations": [
     {
-      "id": "a6a2",
       "nome": "Costa da Lagoa",
       "descricao": "Um paraíso ecológico",
       "cep": "88062370",
@@ -113,7 +112,8 @@
       "longitude": "-48.4597357",
       "usuario": {
         "nome": "Alana Daniele"
-      }
+      },
+      "id": "a6a2"
     },
     {
       "nome": "Espaço Aviva",
@@ -131,23 +131,6 @@
         "nome": "Alana Daniele"
       },
       "id": "82ee"
-    },
-    {
-      "id": "0f0f",
-      "nome": "Lagoa do Peri",
-      "descricao": "Lagoa no sul da ilha",
-      "cep": "88066000",
-      "logradouro": "Rodovia Francisco Thomaz dos Santos",
-      "numero": "",
-      "complemento": "Restaurante Peri",
-      "bairro": "Morro das Pedras",
-      "cidade": "Florianópolis",
-      "estado": "SC",
-      "latitude": "-27.7517229",
-      "longitude": "-48.5098145",
-      "usuario": {
-        "nome": "Ana Silva"
-      }
     },
     {
       "id": "f6ed",
