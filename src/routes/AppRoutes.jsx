@@ -16,7 +16,6 @@ const AppRoutes = () => {
 			<Route path="/cadastro-local" element={<CadastroLocal />} />
 			<Route path="/locais" element={<Locais />} />
 			<Route path="/cadastro-local/:id" element={<CadastroLocal />} />
-			<Route path="/cadastro-local/:id" element={<CadastroLocal />} />
 			<Route path="/locais/:id" element={<CadastroLocal />} />
 		</Routes>
 	);

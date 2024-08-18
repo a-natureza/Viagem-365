@@ -17,6 +17,7 @@
     /* Define a cor do texto como branca para contraste */
     margin-bottom: 30px;
     /* Adiciona espaço abaixo do título */
+    min-width: 800px;
 }
 
 .dashboard-cards {
@@ -59,6 +60,11 @@
 
 .dashboard-navigation button:hover {
     background-color: #0056b3;
+}
+
+.dashboard-cards p {
+    font-size: 55px;
+    color: blue;
 }
 
 .locations-list {

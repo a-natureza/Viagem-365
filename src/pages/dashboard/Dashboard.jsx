@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import MapaLocais from "../../components/MapaLocais";
+import MapaLocais from "../../components/maps/MapaLocais";
 import "./Dashboard.css";
 
 const Dashboard = () => {
@@ -40,17 +40,7 @@ const Dashboard = () => {
 
 	return (
 		<Container className="dashboard-container">
-			<h1>Dashboard</h1>
-			<div className="dashboard-cards">
-				<div className="card">
-					<h3>Usuários Ativos</h3>
-					<p>{activeUsers}</p>
-				</div>
-				<div className="card">
-					<h3>Locais Cadastrados</h3>
-					<p>{registeredLocations}</p>
-				</div>
-			</div>
+			<h1>Dashboard: Trips</h1>
 			<div className="dashboard-navigation">
 				<button type="button" onClick={() => navigate("/locais")}>
 					Locais de Viagem
@@ -62,24 +52,19 @@ const Dashboard = () => {
 					Sair
 				</button>
 			</div>
+			<div className="dashboard-cards">
+				<div className="card">
+					<h3>Usuários Ativos</h3>
+					<p>{activeUsers}</p>
+				</div>
+				<div className="card">
+					<h3>Locais Cadastrados</h3>
+					<p>{registeredLocations}</p>
+				</div>
+			</div>
 			<div className="locations-list">
-				<h2>Locais de Viagem</h2>
-				<ul>
-					{locations.map((location) => (
-						<li key={location.id}>
-							{" "}
-							<h3>{location.nome}</h3>
-							<MapaLocais
-								latitude={location.latitude}
-								longitude={location.longitude}
-							/>
-							<p>Descrição: {location.descricao}</p>
-							<p>Cidade: {location.cidade}</p>
-							<p>Estado: {location.estado}</p>
-							<p>Viajante: {location.usuario.nome}</p>
-						</li>
-					))}
-				</ul>
+				<h2>Mapa de Viagens</h2>
+				<MapaLocais locations={locations} />
 			</div>
 		</Container>
 	);

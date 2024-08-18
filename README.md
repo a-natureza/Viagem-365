@@ -1,4 +1,14 @@
 # Viagem365
+<p aligne="center">
+<img 
+    src="./public/space.jpg"
+    width="100%"
+/>
+<img
+src="./public/lab365.png"
+widht="333"
+/>
+</p>
 
 ## Descrição do Projeto
 
@@ -13,9 +23,13 @@ Viagem365 é uma aplicação web para gerenciamento de viagens, permitindo aos u
 - **Mapas:** Visualização de destinos cadastrados em um mapa.
 
 ## Tecnologias Utilizadas
-
+<img 
+    src="./public/image.png"
+    width="222"
+/>
+- **Planejamento:** Trello
 - **Frontend:** React
-- **Componentes de UI:** Material UI, Bootstrap
+- **Componentes de UI:** Bootstrap
 - **Formulários:** react-hook-form
 - **Roteamento:** react-router-dom
 - **API e Backend:** json-server para prototipagem rápida de API
@@ -54,13 +68,16 @@ Viagem365 é uma aplicação web para gerenciamento de viagens, permitindo aos u
 
 ## Melhorias Futuras
 
-- Back-end 
-- Integração com banco de dados
-- Criptografia
+- Back-end.
+- Integração com banco de dados.
+- Criptografia.
+- Serviços de API no diretório services.
 - Implementar autenticação robusta com JWT.
 - Adicionar testes unitários e de integração.
 - Melhorar a UI com mais funcionalidades interativas.
 - Otimizar o desempenho da aplicação.
+- Permitir postagem de fotos dos locais.
+- Chat para usuários ativos.
 
 ## Vídeo de Apresentação
 <!-- 
@@ -71,9 +88,20 @@ Viagem365 é uma aplicação web para gerenciamento de viagens, permitindo aos u
 - **src/**
   - **components/**: Componentes reutilizáveis.
   - **pages/**: Páginas principais (Login, Dashboard, etc).
-  - **services/**: Serviços de API.
-  - **styles/**: Estilos globais e específicos.
-  - **utils/**: Utilitários e helpers.
+  - **routes/**: Rotas de navegação.
+  - **assets/**: Imagens utilizadas.
+  - **database.json/**: API json server.
+
+##  PLANO DE PROJETO
+Ao construir a aplicação coloquei em prática os aprendizados em:
+
+
+   - **Versionamento**: Uso do GitHub para versionamento de código.
+   - **HTML**: Tags e Elementos semânticos
+   - **CSS**: Seletores, Principais estilos, Layouts e Flexbox
+   - **JavaScript**: Variáveis, Tipos de dados, Operadores, Manipulação do DOM, Estrutura de Controle de Fluxo, Funções, Eventos, JSON, LocalStorage, Interval, Timeout, Operadores Rest e Spread, Módulos, Arrow Functions, Funções de Arrays, Funções Assíncronas e Fetch.
+   - **React**: Renderização de componentes, Props, Proptypes, Hooks, Eventos, Renderização de listas, React Router, Formulários, Prop Drilling, Composition, Estilos Bootstrap, Developer Tools e Deploy.
+   - **Skills**: Organização, criação de documentação e apresentação de solução.
 
 ## 👩‍💻 Expert
 

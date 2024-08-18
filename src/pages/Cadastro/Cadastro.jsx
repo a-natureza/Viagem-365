@@ -100,11 +100,11 @@ const Cadastro = () => {
 
 	return (
 		<Container className="cadastro-container">
-			<div className="img">
-				<img src="./lab365.png" width="100%" alt="lab365" className="lab" />
-				<img src="./trip.jpg" width="100%" alt="trip" className="trip" />
-			</div>
 			<h1>INSCREVA-SE AGORA</h1>
+			<div className="img">
+				<img src="./trip.jpg" width="100%" alt="trip" className="trip" />
+				<img src="./lab365.png" width="100%" alt="lab365" className="lab" />
+			</div>
 			<form onSubmit={handleSubmit(onSubmit)} className="cadastro-form">
 				<div className="form-group">
 					<label htmlFor="nome">Nome: </label>
@@ -282,6 +282,9 @@ const Cadastro = () => {
 				<div className="form-group">
 					<button type="submit" className="btn btn-primary">
 						Cadastrar
+					</button>
+					<button type="button" onClick={() => navigate(-1)}>
+						Cancelar
 					</button>
 				</div>
 			</form>

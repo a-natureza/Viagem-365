@@ -1,7 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import MapaLocais from "../../components/MapaLocais";
+import MapaLocais from "../../components/maps/MapaLocais";
 import "./Locais.css";
 
 function Locais() {
@@ -25,46 +26,62 @@ function Locais() {
 	};
 
 	const handleDelete = async (id) => {
-		try {
-			await axios.delete(`http://localhost:3000/locations/${id}`);
-			setLocations(locations.filter((location) => location.id !== id));
-			alert("Local deletado com sucesso!");
-		} catch (error) {
-			console.error("Erro ao deletar local:", error);
+		const confirmDelete = window.confirm(
+			"Tem certeza que deseja deletar este local?",
+		);
+		if (confirmDelete) {
+			try {
+				await axios.delete(`http://localhost:3000/locations/${id}`);
+				setLocations(locations.filter((location) => location.id !== id));
+				alert("Local deletado com sucesso!");
+			} catch (error) {
+				console.error("Erro ao deletar local:", error);
+				alert(
+					"Houve um problema ao deletar o local. Por favor, tente novamente mais tarde.",
+				);
+			}
+		} else {
+			alert("Ação cancelada.");
 		}
 	};
 
 	return (
-		<div className="locais-container">
+		<Container className="locais-container">
 			<h1>Locais de Viagem</h1>
-			<ul className="locais-list">
+			<Row>
 				{locations.map((location) => (
-					<li key={location.id} className="locais-item">
-						<h3>{location.nome}</h3>
-
-						<MapaLocais
-							latitude={location.latitude}
-							longitude={location.longitude}
-						/>
-						<p>Descrição: {location.descricao}</p>
-						<p>Cidade: {location.cidade}</p>
-						<p>Estado: {location.estado}</p>
-						<p>Viajante: {location.usuario.nome}</p>
-						<div className="locais-actions">
-							<button type="button" onClick={() => handleEdit(location.id)}>
-								Editar
-							</button>
-							<button type="button" onClick={() => handleDelete(location.id)}>
-								Deletar
-							</button>
-							<button type="button" onClick={() => navigate(-1)}>
-								Dashboard
-							</button>
-						</div>
-					</li>
+					<Col key={location.id} md={4} className="mb-4">
+						<Card style={{ width: "444px" }} className="locais-item">
+							<Card.Body>
+								<Card.Title>{location.nome}</Card.Title>
+								<MapaLocais locations={[location]} />
+								<Card.Text>Descrição: {location.descricao}</Card.Text>
+								<Card.Text>Cidade: {location.cidade}</Card.Text>
+								<Card.Text>Estado: {location.estado}</Card.Text>
+								<Card.Text>Viajante: {location.usuario.nome}</Card.Text>
+								<div className="locais-actions">
+									<Button variant="primary" onClick={() => navigate(-1)}>
+										Dashboard
+									</Button>
+									<Button
+										variant="warning"
+										onClick={() => handleEdit(location.id)}
+									>
+										Editar
+									</Button>
+									<Button
+										variant="danger"
+										onClick={() => handleDelete(location.id)}
+									>
+										Deletar
+									</Button>
+								</div>
+							</Card.Body>
+						</Card>
+					</Col>
 				))}
-			</ul>
-		</div>
+			</Row>
+		</Container>
 	);
 }
 
