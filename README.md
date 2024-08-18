@@ -28,21 +28,21 @@ Viagem365 é uma aplicação web para gerenciamento de viagens, permitindo aos u
     <strong>Login</strong><br/>
     <img 
         src="./src/assets/login.png"
-        width="222"
+        width="444"
     />
 </p>
 <p aligne="center">
     <strong>Dashboard</strong><br/>
     <img 
-        src="./src/assets/dashboard.png"
-        width="222"
+        src="./src/assets/board.png"
+        width="444"
     />
 </p>
 <p aligne="center">
     <strong>Locais</strong><br/>
     <img 
         src="./src/assets/locais.png"
-        width="222"
+        width="444"
     />
 </p>
 
@@ -133,7 +133,7 @@ Ao construir a aplicação coloquei em prática os aprendizados em:
 
 <p>
     <img 
-      align=left 
+      aligne=left 
       margin=10 
       width=80 
       src="./src/assets/alana.jpg"
@@ -141,17 +141,20 @@ Ao construir a aplicação coloquei em prática os aprendizados em:
     <p>&nbsp&nbsp&nbspAlana Daniele<br>
     &nbsp&nbsp&nbsp
     <a 
-        href="https://github.com/a-natureza">
+        href="https://github.com/a-natureza/"
+        target="_blank">
         GitHub
     </a>
     &nbsp;|&nbsp;
     <a 
-        href="https://www.linkedin.com/in/alana-daniele/">
+        href="https://www.linkedin.com/in/alana-daniele/"
+        target="_blank">
         LinkedIn
     </a>
     &nbsp;|&nbsp;
     <a 
-        href="https://www.instagram.com/tendanapraia">
+        href="https://www.instagram.com/tendanapraia/"
+        target="_blank">
         Instagram
     </a>
     &nbsp;|&nbsp;</p>
