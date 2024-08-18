@@ -40,7 +40,7 @@ const Dashboard = () => {
 
 	return (
 		<Container className="dashboard-container">
-			<h1>Dashboard: Trips</h1>
+			<h1>Dashboard: Mapa de Locais</h1>
 			<div className="dashboard-navigation">
 				<button type="button" onClick={() => navigate("/locais")}>
 					Locais de Viagem
@@ -52,19 +52,21 @@ const Dashboard = () => {
 					Sair
 				</button>
 			</div>
-			<div className="dashboard-cards">
-				<div className="card">
-					<h3>Usuários Ativos</h3>
-					<p>{activeUsers}</p>
+			<div className="dashboard-main">
+				<div className="dashboard-cards">
+					<div className="card">
+						<h3>Usuários Ativos</h3>
+						<p>{activeUsers}</p>
+					</div>
+					<div className="card">
+						<h3>Locais Cadastrados</h3>
+						<p>{registeredLocations}</p>
+					</div>
 				</div>
-				<div className="card">
-					<h3>Locais Cadastrados</h3>
-					<p>{registeredLocations}</p>
+				<div className="locations-list">
+					{/* <h2>Mapa de Viagens</h2> */}
+					<MapaLocais locations={locations} />
 				</div>
-			</div>
-			<div className="locations-list">
-				<h2>Mapa de Viagens</h2>
-				<MapaLocais locations={locations} />
 			</div>
 		</Container>
 	);

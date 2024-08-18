@@ -20,7 +20,7 @@ function MapaLocais({ locations }) {
 			center={centroInicial} // Centro inicial do mapa
 			zoom={isMultiple ? 11 : 15}
 			className="leaflet-container"
-			style={{ height: "222px", maxWidth: "100%", width: "100%" }}
+			style={{ height: "444px", maxWidth: "100%", width: "100%" }}
 		>
 			<TileLayer
 				url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

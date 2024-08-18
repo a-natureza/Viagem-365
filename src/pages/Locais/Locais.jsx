@@ -55,10 +55,14 @@ function Locais() {
 							<Card.Body>
 								<Card.Title>{location.nome}</Card.Title>
 								<MapaLocais locations={[location]} />
-								<Card.Text>Descrição: {location.descricao}</Card.Text>
+								<Card.Text>
+									Descrição: <strong>{location.descricao}</strong>
+								</Card.Text>
 								<Card.Text>Cidade: {location.cidade}</Card.Text>
 								<Card.Text>Estado: {location.estado}</Card.Text>
-								<Card.Text>Viajante: {location.usuario.nome}</Card.Text>
+								<Card.Text>
+									<strong>{location.usuario.nome}</strong>
+								</Card.Text>
 								<div className="locais-actions">
 									<Button variant="primary" onClick={() => navigate(-1)}>
 										Dashboard

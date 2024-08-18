@@ -1,6 +1,6 @@
 .dashboard-container {
     padding: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Grande', Geneva, Verdana, sans-serif;
     box-sizing: border-box;
     background-color: orange;
     min-height: 100vh;
@@ -12,43 +12,62 @@
 
 .dashboard-container h1 {
     font-size: 2.5rem;
-    /* Aumenta o tamanho da fonte para dar destaque ao título */
     color: white;
-    /* Define a cor do texto como branca para contraste */
     margin-bottom: 30px;
-    /* Adiciona espaço abaixo do título */
     min-width: 800px;
+}
+
+.dashboard-main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
+    /* Para espaçamento entre cards e mapa */
+    flex-wrap: wrap;
+    /* Para permitir que os elementos se reorganizem em telas menores */
 }
 
 .dashboard-cards {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-    gap: 8px;
-    width: 100%;
-    max-width: 800px;
+    flex-direction: column;
+    gap: 20px;
+    /* Espaço entre os cards */
+    flex: 1;
+    /* Faz com que os cards ocupem metade da tela */
+    min-width: 300px;
+    /* Garante que os cards não encolham muito em telas pequenas */
 }
 
 .card {
     background: #f8f9fa;
     border-radius: 5px;
-    padding: 20px;
-    width: 222px;
+    padding: 27px;
+    width: 100%;
     text-align: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-cards p {
+    font-size: 55px;
+    color: blue;
+}
+
+.locations-list {
+    flex: 2;
+    /* Faz com que o mapa ocupe mais espaço que os cards */
+    min-width: 400px;
+    /* Garante que o mapa não encolha muito em telas pequenas */
 }
 
 .dashboard-navigation {
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
-    /* Centraliza horizontalmente os botões de navegação */
     gap: 10px;
-    /* Espaço entre os botões */
 }
 
 .dashboard-navigation button {
-    /* margin-right: 10px; */
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -62,33 +81,20 @@
     background-color: #0056b3;
 }
 
-.dashboard-cards p {
-    font-size: 55px;
-    color: blue;
-}
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .dashboard-main {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.locations-list {
-    width: 100%;
-    max-width: 800px;
-    /* Limita a largura da lista de locais para manter a consistência */
-    margin-top: 20px;
-    /* Adiciona espaço acima da lista */
-}
+    .locations-list {
+        min-width: 300px;
+    }
 
-.locations-list ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.locations-list li {
-    background: #e9ecef;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    padding: 10px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    /* Adiciona uma leve sombra aos itens da lista */
-    text-align: center;
-    /* Centraliza o texto dos locais na lista */
-    font-weight: 500;
-    /* Torna o texto um pouco mais espesso */
+    .dashboard-cards {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
