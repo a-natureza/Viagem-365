@@ -8,6 +8,7 @@ import "./Locais.css";
 function Locais() {
 	const [locations, setLocations] = useState([]);
 	const navigate = useNavigate();
+	const usuarioLogado = JSON.parse(localStorage.getItem("usuario"));
 
 	useEffect(() => {
 		const fetchLocations = async () => {
@@ -49,41 +50,48 @@ function Locais() {
 		<Container className="locais-container">
 			<h1>Locais de Viagem</h1>
 			<Row>
-				{locations.map((location) => (
-					<Col key={location.id} md={4} className="mb-4">
-						<Card style={{ width: "444px" }} className="locais-item">
-							<Card.Body>
-								<Card.Title>{location.nome}</Card.Title>
-								<MapaLocais locations={[location]} />
-								<Card.Text>
-									Descrição: <strong>{location.descricao}</strong>
-								</Card.Text>
-								<Card.Text>Cidade: {location.cidade}</Card.Text>
-								<Card.Text>Estado: {location.estado}</Card.Text>
-								<Card.Text>
-									<strong>{location.usuario.nome}</strong>
-								</Card.Text>
-								<div className="locais-actions">
-									<Button variant="primary" onClick={() => navigate(-1)}>
-										Dashboard
-									</Button>
-									<Button
-										variant="warning"
-										onClick={() => handleEdit(location.id)}
-									>
-										Editar
-									</Button>
-									<Button
-										variant="danger"
-										onClick={() => handleDelete(location.id)}
-									>
-										Deletar
-									</Button>
-								</div>
-							</Card.Body>
-						</Card>
-					</Col>
-				))}
+				{locations.map((location) => {
+					return (
+						<Col key={location.id} md={4} className="mb-4">
+							<Card style={{ width: "444px" }} className="locais-item">
+								<Card.Body>
+									<Card.Title>{location.nome}</Card.Title>
+									<MapaLocais locations={[location]} />
+									<Card.Text>
+										Descrição: <strong>{location.descricao}</strong>
+									</Card.Text>
+									<Card.Text>Cidade: {location.cidade}</Card.Text>
+									<Card.Text>Estado: {location.estado}</Card.Text>
+									<Card.Text>
+										<strong>{location.usuario.nome}</strong>
+									</Card.Text>
+									<div className="locais-actions">
+										<Button variant="primary" onClick={() => navigate(-1)}>
+											Dashboard
+										</Button>
+										{location.usuarioId &&
+											location.usuarioId === usuarioLogado.id && (
+												<>
+													<Button
+														variant="warning"
+														onClick={() => handleEdit(location.id)}
+													>
+														Editar
+													</Button>
+													<Button
+														variant="danger"
+														onClick={() => handleDelete(location.id)}
+													>
+														Deletar
+													</Button>
+												</>
+											)}
+									</div>
+								</Card.Body>
+							</Card>
+						</Col>
+					);
+				})}
 			</Row>
 		</Container>
 	);

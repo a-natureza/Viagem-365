@@ -99,7 +99,6 @@
   ],
   "locations": [
     {
-      "id": "a6a2",
       "nome": "Costa da Lagoa",
       "descricao": "Um paraíso ecológico",
       "cep": "88062370",
@@ -113,7 +112,9 @@
       "longitude": "-48.4597357",
       "usuario": {
         "nome": "Alana Daniele"
-      }
+      },
+      "id": "a6a2",
+      "usuarioId": "aab1"
     },
     {
       "nome": "Espaço Aviva",
@@ -130,24 +131,8 @@
       "usuario": {
         "nome": "Alana Daniele"
       },
-      "id": "82ee"
-    },
-    {
-      "id": "0f0f",
-      "nome": "Lagoa do Peri",
-      "descricao": "Lagoa no sul da ilha",
-      "cep": "88066000",
-      "logradouro": "Rodovia Francisco Thomaz dos Santos",
-      "numero": "",
-      "complemento": "Restaurante Peri",
-      "bairro": "Morro das Pedras",
-      "cidade": "Florianópolis",
-      "estado": "SC",
-      "latitude": "-27.7517229",
-      "longitude": "-48.5098145",
-      "usuario": {
-        "nome": "Ana Silva"
-      }
+      "id": "82ee",
+      "usuarioId": "aab1"
     },
     {
       "id": "f6ed",
@@ -164,7 +149,8 @@
       "longitude": "-48.4231921",
       "usuario": {
         "nome": "Ana Silva"
-      }
+      },
+      "usuarioId": "d652"
     },
     {
       "id": "a001",
@@ -181,7 +167,8 @@
       "longitude": "-48.453446",
       "usuario": {
         "nome": "Ana Silva"
-      }
+      },
+      "usuarioId": "d652"
     },
     {
       "id": "a002",
@@ -198,7 +185,8 @@
       "longitude": "-48.435276",
       "usuario": {
         "nome": "Carlos Oliveira"
-      }
+      },
+      "usuarioId": "3946"
     },
     {
       "id": "a003",
@@ -215,7 +203,8 @@
       "longitude": "-48.478347",
       "usuario": {
         "nome": "Maria Santos"
-      }
+      },
+      "usuarioId": "6abe"
     },
     {
       "id": "a004",
@@ -231,8 +220,9 @@
       "latitude": "-27.595238",
       "longitude": "-48.435841",
       "usuario": {
-        "nome": "Lucas Costa"
-      }
+        "nome": "Alana Daniele"
+      },
+      "usuarioId": "aab1"
     },
     {
       "id": "a005",
@@ -248,8 +238,9 @@
       "latitude": "-27.685006",
       "longitude": "-48.471158",
       "usuario": {
-        "nome": "Pedro Souza"
-      }
+        "nome": "Alana Daniele"
+      },
+      "usuarioId": "aab1"
     },
     {
       "id": "4182",
@@ -266,7 +257,8 @@
       "longitude": "-48.5345301",
       "usuario": {
         "nome": "Alana Daniele"
-      }
+      },
+      "usuarioId": "aab1"
     }
   ]
 }

@@ -20,6 +20,7 @@ const Login = () => {
 			);
 
 			if (usuarioEncontrado) {
+				localStorage.setItem("isAuthenticated", "true");
 				localStorage.setItem("usuario", JSON.stringify(usuarioEncontrado));
 				navigate("/dashboard");
 			} else {
