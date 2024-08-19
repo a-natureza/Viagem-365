@@ -135,8 +135,9 @@
       "usuarioId": "aab1"
     },
     {
+      "id": "f6ed",
       "nome": "Farol da Barra da Lagoa",
-      "descricao": "Iluminando a vida trazendo luz",
+      "descricao": "Iluminando a vida ",
       "cep": "88061090",
       "logradouro": "Rua Amaro Coelho",
       "numero": "",
@@ -147,9 +148,9 @@
       "latitude": "-27.5752464",
       "longitude": "-48.4231921",
       "usuario": {
-        "nome": "Alana Daniele"
+        "nome": "Ana Silva"
       },
-      "id": "f6ed"
+      "usuarioId": "d652"
     },
     {
       "id": "a001",
