@@ -106,8 +106,8 @@ Viagem365 é uma aplicação web para gerenciamento de viagens, permitindo aos u
 - Header, Footer e Siderbar.
 
 ## Vídeo de Apresentação
-<!-- 
-[![Assista ao vídeo de apresentação](https://img.youtube.com/vi/seu-video-id/0.jpg)](https://www.youtube.com/watch?v=seu-video-id) -->
+
+[![Assista ao vídeo de apresentação](./src/assets/login.png)](https://youtu.be/ufRgymyV-Xs)
 
 ## Estrutura do Projeto
 
