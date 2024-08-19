@@ -259,6 +259,42 @@
         "nome": "Alana Daniele"
       },
       "usuarioId": "aab1"
+    },
+    {
+      "id": "6b83",
+      "nome": "Mercado Público",
+      "descricao": "Centro Histórico",
+      "cep": "88010030",
+      "logradouro": "Rua Jerônimo Coelho",
+      "numero": "",
+      "complemento": "",
+      "bairro": "Centro",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "latitude": "-27.5971334",
+      "longitude": "-48.5532168",
+      "usuario": {
+        "nome": "Alana Daniele"
+      },
+      "usuarioId": "aab1"
+    },
+    {
+      "id": "5fe0",
+      "nome": "Ponte Hercílio Luz",
+      "descricao": "Inaugurada em 1982, um cartão postal da cidade.",
+      "cep": "88010400",
+      "logradouro": "Praça Quinze de Novembro",
+      "numero": "",
+      "complemento": "",
+      "bairro": "Centro",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "latitude": "-27.59763875",
+      "longitude": "-48.54985804631796",
+      "usuario": {
+        "nome": "Carlos Oliveira"
+      },
+      "usuarioId": "3946"
     }
   ]
 }

@@ -103,6 +103,7 @@ function CadastroLocal() {
 				latitude,
 				longitude,
 				usuario: { nome: user.nome },
+				usuarioId: user.id,
 			};
 
 			if (id) {

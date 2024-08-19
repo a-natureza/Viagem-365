@@ -54,7 +54,7 @@ Viagem365 é uma aplicação web para gerenciamento de viagens, permitindo aos u
 />
 - **Planejamento:** Trello
 - **Frontend:** React
-- **Componentes de UI:** Bootstrap
+- **Componentes de UI:** React Bootstrap
 - **Formulários:** react-hook-form
 - **Roteamento:** react-router-dom
 - **API e Backend:** json-server para prototipagem rápida de API
